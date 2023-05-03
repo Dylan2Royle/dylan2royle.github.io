@@ -1,0 +1,80 @@
+.body {
+    background: linear-gradient(to right, #ecf3f1, #7ec3f8);
+    font-family: 'Gill Sans MT', 'Trebuchet MS';
+}
+
+.box {
+    width: 800px;
+    height: auto;
+    background: #466368;
+    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 9px;
+}
+
+.text-1 {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.box-2 {
+    width: 750px;
+    height: auto;
+    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 9px;
+}
+
+.text-2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.Hyperlink {
+    text-decoration: none;
+    color: rgb(30, 34, 32);
+    margin: 5px;
+    list-style-type:none;
+}
+
+.img {
+    height: 50px;
+    width: auto;
+}
+
+  .box:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+
+ 
+ 
+  .text-3 {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.box-3 {
+    width: 800px;
+    height: auto;
+    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 9px;
+}
+
+#navbar {
+    overflow: hidden !important;
+}
