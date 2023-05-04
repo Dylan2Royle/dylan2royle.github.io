@@ -4,7 +4,7 @@
 }
 
 .box {
-    width: 800px;
+    width: 950px;
     height: auto;
     background: #466368;
     background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
@@ -23,7 +23,7 @@
 }
 
 .box-2 {
-    width: 750px;
+    width: 850px;
     height: auto;
     background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
     border: 1px solid black;
@@ -122,7 +122,7 @@
   background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #e0aeae;
+  border: 1px 1px 2px solid #863232;
   width: 80%;
   font-size: x-large;
   text-decoration: none;
