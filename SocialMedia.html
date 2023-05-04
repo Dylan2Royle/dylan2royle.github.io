@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Dylan Royle - Social Media </title>
   <link rel="stylesheet" href="style.css">
-  
+  <script src="Site.js">  </script>
 </head>
 <body class="body"> 
 
@@ -19,18 +19,29 @@
         </div>
     </div>
 
-    <a class="Hyperlink" href="https://www.Twitch.tv/dylanroylegaming">
+      <a class="Hyperlink" onclick="openPopup();">
         <div class="box-2">
           <div class="text-2">
             <ul style="list-style:none;">
-              <h3> Twitch </h3>
+              <h3> Twitch</h3>
               <img class="img" src="Icons\Twitch.png">
             </ul>
           </div>
         </div>
       </a>
+      
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <ul>
+          <li> <span class="close" onclick="closePopup()">&times;</span> </li>
+          <li> <a href="https://www.google.com">Main Channel</a> </li>
+          <li> <a href="https://www.youtube.com">Alt Channel</a> </li>
+          
+        </ul>
+        </div>
+      </div>
     
-    <a class="Hyperlink" href="https://www.instagram.com/dylan_royle/">
+      <a class="Hyperlink" href="https://www.instagram.com/dylan_royle/">
         <div class="box-2">
           <div class="text-2">
             <ul style="list-style:none;">
@@ -73,7 +84,6 @@
           </div>
         </div>
       </a>
-
       
       <a class="Hyperlink" onclick="openPopup();">
         <div class="box-2">
@@ -97,21 +107,6 @@
         </ul>
         </div>
       </div>
-
-
-      <script>
-        function openPopup() {
-  document.getElementById("popup").style.display = "block";
-  document.getElementById("popup").classList.add("popup-animation");
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("popup").classList.remove("popup-animation");
-}
-
-        </script>
-
 
       <div class="box-3">
         <div class="text-3">
