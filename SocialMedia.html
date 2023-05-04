@@ -75,7 +75,7 @@
       </a>
 
       
-      <a class="Hyperlink" href="#" onclick="openPopup();">
+      <a class="Hyperlink" onclick="openPopup();">
         <div class="box-2">
           <div class="text-2">
             <ul style="list-style:none;">
@@ -88,23 +88,27 @@
       
       <div id="popup" class="popup">
         <div class="popup-content">
-          <a href="https://www.google.com">Main Channel</a>
-          <a href="https://www.youtube.com">Vods Channel</a>
-          <a href="https://www.facebook.com">Clips Channel</a>
-          <a href="https://www.twitter.com">Extra Channel</a>
-          <span class="close" onclick="closePopup()">&times;</span>
+          <ul>
+          <li> <span class="close" onclick="closePopup()">&times;</span> </li>
+          <li> <a href="https://www.google.com">Main Channel</a> </li>
+          <li> <a href="https://www.youtube.com">Vods Channel</a> </li>
+          <li> <a href="https://www.facebook.com">Clips Channel</a> </li>
+          <li> <a href="https://www.twitter.com">Extra Channel</a> </li>
+        </ul>
         </div>
       </div>
 
 
       <script>
         function openPopup() {
-            document.getElementById("popup").style.display = "block";
-          }
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("popup").classList.add("popup-animation");
+}
 
-          function closePopup() {
-            document.getElementById("popup").style.display = "none";
-          }
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("popup").classList.remove("popup-animation");
+}
 
         </script>
 
