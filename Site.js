@@ -7,3 +7,7 @@ function openPopup() {
     document.getElementById("popup").style.display = "none";
     document.getElementById("popup").classList.remove("popup-animation");
   }
+
+
+
+  
