@@ -52,6 +52,16 @@
     width: auto;
 }
 
+.img2 {
+  height: 250px;
+  width: 250px;
+}
+
+.a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
   .box:hover {
     cursor: pointer;
     background-color: #f0f0f0;
