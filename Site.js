@@ -36,3 +36,9 @@ function openPopup() {
     document.getElementById("countdown").innerHTML = yearsRemaining;
     setTimeout(calculate, 1000);} 
     window.onload = calculate;
+
+    
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href.replace('.html', ''));
+  }
+  
