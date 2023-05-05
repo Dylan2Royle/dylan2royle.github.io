@@ -37,8 +37,4 @@ function openPopup() {
     setTimeout(calculate, 1000);} 
     window.onload = calculate;
 
-    
-    if (window.history.replaceState) {
-      window.history.replaceState(null, null, window.location.href.replace('.html', ''));
-  }
   
