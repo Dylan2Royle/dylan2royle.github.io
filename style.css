@@ -17,9 +17,32 @@
 
 .text-1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+.text-1-navbar {
+  text-align: center;
+  font-size: 21px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.text-1 a {
+  position: relative;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.text-1 a::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+}
+
+.text-1 a:last-child::after {
+  content: '';
 }
 
 .box-2 {
@@ -44,6 +67,7 @@
     text-decoration: none;
     color: rgb(30, 34, 32);
     margin: 5px;
+    font-size: 25px;
     list-style-type:none;
 }
 
