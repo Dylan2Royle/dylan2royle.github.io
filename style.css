@@ -1,221 +1,62 @@
 /* Site CSS */
-.body {
-    background: linear-gradient(to right, #ecf3f1, #7ec3f8);
-    font-family: 'Gill Sans MT', 'Trebuchet MS';
-}
+.body { background: linear-gradient(to right, #ecf3f1, #7ec3f8); font-family: 'Gill Sans MT', 'Trebuchet MS'; }
+.Hyperlink { text-decoration: none; color: rgb(30, 34, 32); margin: 5px; font-size: 25px; list-style-type:none; }
+/* Per Page CSS */
+.box-2 { width: 850px; height: auto; text-align: center; background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black; margin: 0 auto; margin-bottom: 20px; border-radius: 5%; box-shadow: 2px 2px 9px; }
 
-.box {
-    width: 850px;
-    height: auto;
-    background: #466368;
-    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-    border: 1px solid black;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 5%;
-    box-shadow: 3px 3px 9px;
-}
-
-.box-2 {
-  width: 750px;
-  height: auto;
-  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  border-radius: 5%;
-  box-shadow: 3px 3px 9px;
-}
-
-.box-3 {
-  width: 750px;
-  height: auto;
-  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  border-radius: 5%;
-  box-shadow: 3px 3px 9px;
-}
-
-.text-1 a {
-  position: relative;
-  text-decoration: none;
-  padding-right: 10px;
-}
-
-.text-1 a::after {
-  content: '|';
-  position: absolute;
-  right: 0;
-}
-
-.text-1 a:last-child::after {
-  content: '';
-}
-
-
-.text-1 {
-    text-align: center;
-    font-size: 21px;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.TextBear {
-  text-align: center;
-  font-size: 21px;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.clockclass {
-  margin-bottom: 2px;
-}
-
-.text-1-navbar {
-  text-align: center;
-  font-size: 21px;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.text-2 {
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.Hyperlink {
-    text-decoration: none;
-    color: rgb(30, 34, 32);
-    margin: 5px;
-    font-size: 25px;
-    list-style-type:none;
-}
-
-.img {
-    height: 50px;
-    width: auto;
-}
-
-.img2 {
-  height: 250px;
-  width: 250px;
-}
-
-.Apple {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
-}
-
-  .box:hover {
-    cursor: pointer;
-    background-color: #f0f0f0;
-  }
-
-  .text-3 {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-
-#navbar {
-    overflow: hidden !important;
-}
-
-/* Dropdown */
-
-
-
-/* Dropdown */
-
+  .TextBear { text-align: center; font-size: 21px; text-decoration: none; margin-bottom: 10px; }
+.Cute-Bear { color: rgb(0, 0, 0); text-decoration: underline; }
+.img { height: 3.2em; }
+.img2 { height: 15.625rem; }
+.box-3 { text-align: center; width: 700px; height: auto; background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black; margin: auto; margin-bottom: 20px; border-radius: 5%; box-shadow: 2px 2px 9px; }
+.text-2 { text-decoration: none; font-size: 20px; margin-left: 1em; margin-right: 1em; }
+.text-3 { /* font-size: 21px; */ margin: 0; }
 
 /* Pop Up CSS*/
-
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-}
-
-.popup-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.popup-content li {
-  margin-bottom: 10px;
-}
-
-.popup-content a {
-  color: #333;
-  text-decoration: none;
-}
-
-.popup-content a:hover {
-  text-decoration: underline;
-}
-
-.popup-content {
-  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px 1px 2px solid #863232;
-  width: 80%;
-  font-size: x-large;
-  text-decoration: none;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.8s;
-  animation-name: slideIn;
-  animation-duration: 0.8s;
-  text-align: center;
-}
+  .popup-content { background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8); margin: 15% auto; padding-top: 5px; padding-right: 16px; padding-left: 16px;
+    padding-bottom: 15px; border-radius: 5px; width: 500px;  font-size: x-large; text-decoration: none; text-align: center;
+    -webkit-animation-name: slideIn; -webkit-animation-duration: 0.5s; animation-name: slideIn; animation-duration: 0.5s; }
+  
+  .popup { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%;
+    overflow: auto; background-color: rgba(0,0,0,0.4); -webkit-animation-name: fadeIn; -webkit-animation-duration: 0.4s; animation-name: fadeIn; animation-duration: 0.4s; }
+  
+  .popup-content ul { list-style: none; padding: 0; margin: 0;}
+  .popup-content a { color: #333; text-decoration: none; }
+  .popup-content a:hover { text-decoration: underline; }
+  .popup-content li { margin-bottom: 16px; }
+  
 
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
 @-webkit-keyframes slideIn {
   from {transform: translateY(-100%);}
   to {transform: translateY(0);}
 }
-
 @keyframes slideIn {
   from {transform: translateY(-100%);}
   to {transform: translateY(0);}
 }
-
-
 .close {
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
 /* Scroll Bar CSS */
 
@@ -241,3 +82,52 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+/*  Nav Bar  */
+
+.box {
+  width: 1000px;
+  height: auto;
+  text-align: center;
+  background: #466368;
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 9px;
+}
+
+.text-1 {
+  font-size: 21px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.text-1-navbar {
+  text-align: center;
+  font-size: 21px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.clockclass {
+  margin-bottom: 2px;
+}
+
+.text-1 a {
+  position: relative;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.text-1 a::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+}
+
+.text-1 a:last-child::after {
+  content: '';
+}
+
