@@ -84,15 +84,6 @@ function openPopup() {
     return i;
   }
 
-  // // Check if the use is Local or Prod
-  // if (hostname.includes("DylanRoyle.co.uk")) {
-  //   redirectURL ="https://DylanRoyle.co.uk/DevDylan2Royle.github.io";
-  
-  // } else if (hostname.includes("127.0.0.1")) {
-  //   redirectURL = "127.0.0.1:3000/DevDylan2Royle.github.io";
-  // } 
-
-
   // Social Media 
   const dropdown = document.querySelector('.dropdown');
 
