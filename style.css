@@ -5,7 +5,7 @@
 }
 
 .box {
-    width: 950px;
+    width: 850px;
     height: auto;
     background: #466368;
     background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
@@ -14,6 +14,28 @@
     margin-bottom: 20px;
     border-radius: 5%;
     box-shadow: 3px 3px 9px;
+}
+
+.box-2 {
+  width: 750px;
+  height: auto;
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 9px;
+}
+
+.box-3 {
+  width: 750px;
+  height: auto;
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 9px;
 }
 
 .text-1 a {
@@ -58,17 +80,6 @@
   margin-bottom: 10px;
 }
 
-.box-2 {
-    width: 850px;
-    height: auto;
-    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-    border: 1px solid black;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 5%;
-    box-shadow: 3px 3px 9px;
-}
-
 .text-2 {
     text-align: center;
     text-decoration: none;
@@ -108,16 +119,6 @@
     font-size: 20px;
 }
 
-.box-3 {
-    width: 800px;
-    height: auto;
-    background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
-    border: 1px solid black;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 5%;
-    box-shadow: 3px 3px 9px;
-}
 
 #navbar {
     overflow: hidden !important;
