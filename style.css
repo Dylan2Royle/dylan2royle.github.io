@@ -16,6 +16,23 @@
     box-shadow: 3px 3px 9px;
 }
 
+.text-1 a {
+  position: relative;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.text-1 a::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+}
+
+.text-1 a:last-child::after {
+  content: '';
+}
+
+
 .text-1 {
     text-align: center;
     font-size: 21px;
@@ -39,22 +56,6 @@
   font-size: 21px;
   text-decoration: none;
   margin-bottom: 10px;
-}
-
-.text-1 a {
-  position: relative;
-  text-decoration: none;
-  padding-right: 10px;
-}
-
-.text-1 a::after {
-  content: '|';
-  position: absolute;
-  right: 0;
-}
-
-.text-1 a:last-child::after {
-  content: '';
 }
 
 .box-2 {
@@ -121,6 +122,13 @@
 #navbar {
     overflow: hidden !important;
 }
+
+/* Dropdown */
+
+
+
+/* Dropdown */
+
 
 /* Pop Up CSS*/
 

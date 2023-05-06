@@ -91,3 +91,20 @@ function openPopup() {
   // } else if (hostname.includes("127.0.0.1")) {
   //   redirectURL = "127.0.0.1:3000/DevDylan2Royle.github.io";
   // } 
+
+
+  // Social Media 
+  const dropdown = document.querySelector('.dropdown');
+
+  dropdown.addEventListener('mouseleave', () => {
+    const dropdownContent = document.querySelector('.dropdown-content');
+    dropdownContent.style.display = 'none';
+  });
+  
+  document.querySelectorAll('.dropdown-content a').forEach((item) => {
+    item.addEventListener('click', () => {
+      const dropdownContent = document.querySelector('.dropdown-content');
+      dropdownContent.style.display = 'none';
+    });
+  });
+  
