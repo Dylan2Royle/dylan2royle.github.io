@@ -53,37 +53,6 @@ function openPopup() {
   };
   
 
-  // Clock 
-  function startTime() {
-    var today = new Date();
-    var timeZoneOffset = today.getTimezoneOffset() / 60;
-    var userOffset = -timeZoneOffset; // user's timezone offset from UTC
-    var londonOffset = 0; // London timezone offset from UTC
-    var bstOffset = 1; // BST offset from UTC is 1 hour ahead
-    var londonTime = new Date(today.getTime() + (londonOffset + bstOffset) * 60 * 60 * 1000); // calculate London time
-    var userTime = new Date(londonTime.getTime() + userOffset * 60 * 60 * 1000); // calculate user's time
-    var hour = userTime.getHours();
-    var minute = userTime.getMinutes();
-    var second = userTime.getSeconds();
-    var ampm = hour >= 12 ? 'PM' : 'AM';
-    hour = hour % 12;
-    hour = hour ? hour : 12; // the hour '0' should be '12'
-    hour = checkTime(hour);
-    minute = checkTime(minute);
-    second = checkTime(second);
-    var gmtOffset = userOffset >= 0 ? '+' + userOffset : userOffset; // format GMT/BST offset
-    var bstOrGmt = bstOffset == 1 ? 'BST' : 'GMT';
-    document.getElementById('Timeclock').innerHTML = hour + ':' + minute + ':' + second + ' ' + ampm + ' (GMT' + gmtOffset + '/' + bstOrGmt + ')';
-    var t = setTimeout(startTime, 500);
-  }
-
-  function checkTime(i) {
-    if (i < 10) {
-      i = '0' + i;
-    } // add zero in front of numbers < 10
-    return i;
-  }
-
   // Social Media 
   const dropdown = document.querySelector('.dropdown');
 
@@ -99,3 +68,40 @@ function openPopup() {
     });
   });
   
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.style.display === "block") {
+        openDropdown.style.display = "none";
+      }
+    }
+  }
+}
+
+
+// Nav Bar Buttons and Dropdown
+
+function HomePage() {
+  window.location.href = "index.html"
+  // window.location.href = "About.html"
+}
+
+function SocialMedia() {
+  window.location.href = "SocialMedia.html"
+}
+
+function PreviousWork() {
+  window.location.href = "PreviousWork.html"
+}
+
+function AboutMe() {
+  window.location.href = "About.html"
+}
+
+function YoutubeTest() {
+  window.location.href = "https://youtube.com"
+}
