@@ -10,6 +10,7 @@
 
 <body class="body"> 
   
+  <!-- Nav Bar -->
     <div class="box">
       <div class="text-1">
         <h1 class="clockclass"> Dylan Royle </h1>
@@ -32,13 +33,25 @@
           </div>
           <!-- Dropdown -->
 
-          <button class="btn" type=button onclick="PreviousWork()"> Previous Work </button>
+          <!-- <button class="btn" type=button onclick="LiveStream()"> Live Right Now </button> -->
+          <!-- <button class="btn" type=button onclick="PreviousWork()"> Previous Work </button> -->
+          <div class="dropdown">
+            <button class="btn" type=button onclick="PWPCurrentProjects()"> Previous Work </button>
+            <div class="dropdown-content">
+              <button type="button" class="btn-2" class="dropdown-item" onclick="PWPCurrentProjects()"> Current Projects </button>
+              <button type="button" class="btn-3" onclick="PWPPastProjects()"> Past Projects</button>
+            </div>
+          </div>
+          <!-- Dropdown -->
+
           <button class="btn" type=button onclick="AboutMe()"> About Me </button>
+          <!-- <button class="btn" type=button onclick="SiteMap()"> Site Map </button> -->
           </div>
         </div>
         </div>
       </div>
   </div>
+  <!-- Nav Bar -->
 
   <div class="box-2">
         <h1 class="text-1"> Main Channel Video </h1>

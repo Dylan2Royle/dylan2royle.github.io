@@ -7,8 +7,9 @@
   <script src="Site.js">  </script>
 </head>
 
-<body class="body"> 
-
+<body class="body">
+  
+  
  <!-- Nav Bar -->
  <div class="box">
   <div class="text-1">
@@ -32,21 +33,21 @@
       </div>
       <!-- Dropdown -->
 
-      <button class="btn" type=button onclick="LiveStream()"> Live Right Now </button>
+      <!-- <button class="btn" type=button onclick="LiveStream()"> Live Right Now </button> -->
       
       <!-- <button class="btn" type=button onclick="PreviousWork()"> Previous Work </button> -->
 
       <div class="dropdown">
         <button class="btn" type=button onclick="PWPCurrentProjects()"> Previous Work </button>
         <div class="dropdown-content">
-          <button type="button" class="btn-2" class="dropdown-item" onclick="PWPCurrentProjects()"> Current Projects </button>
+          <button type="button" class="btn-2" class="dropdown-item" onclick="PWPCurrentProjects()"> <b> Current Projects </b> </button>
           <button type="button" class="btn-3" onclick="PWPPastProjects()"> Past Projects</button>
         </div>
       </div>
       <!-- Dropdown -->
 
       <button class="btn" type=button onclick="AboutMe()"> About Me </button>
-      <button class="btn" type=button onclick="AboutMe()"> Site Map </button>
+      <!-- <button class="btn" type=button onclick="AboutMe()"> Site Map </button> -->
       </div>
     </div>
     </div>
@@ -54,15 +55,26 @@
 </div>
 <!-- Nav Bar -->
 
-    <a class="Hyperlink" href="https://www.Twitch.tv/dylanroylegaming">
-        <div class="box-2">
+
+
+  <div class="box-4">
+    <button class="btn" type="button" onclick="CurrentProjects()"> <b> Current Projects</b> </button>
+    <button class="btn" type="button" onclick="PWPPastProjects()"> Past Projects </button>
+  </div>
+
+        <div class="boxCurrpro">
           <div class="TextBear">
-              <a class="Cute-Bear" href="https://www.vecteezy.com/members/focus_bell"> Click Me -  Art By Wannawit Vachirakhueankhan</a>
-              <h3> This Page is Still Work in Progress, A lot more things will be on this Part of the website like 3d models and Previous Work like Editing video, photo and more </h3>
-              <img class="img2" src="Icons/cute-polar-bear.jpg">
+              
+            <h4> ESP32 and DHT11 Temperature and Humidity Sensor Project </h4>
+
+            <img src="Icons/cute-polar-bear.jpg" class="img2">
+            
+            <h6> This Description is Small no i Mean Small LUL </h6>
+
+            <button type="button" class="dropdown-item" onclick="GithubProject()"> Read More About This Project </button>
+
           </div>
         </div>
-      </a>
 
       <div class="box-3">
         <div class="text-3">

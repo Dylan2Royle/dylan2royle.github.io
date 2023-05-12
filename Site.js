@@ -95,13 +95,32 @@ function SocialMedia() {
 }
 
 function PreviousWork() {
-  window.location.href = "PreviousWork.html"
+  window.location.href = "PWProjects.html"
 }
 
 function AboutMe() {
   window.location.href = "About.html"
 }
 
-function YoutubeTest() {
-  window.location.href = "https://youtube.com"
+
+function PWPPastProjects() {
+  window.location.href = "PWPPastProjects.html"
+}
+
+function PWPCurrentProjects() {
+  window.location.href = "PWProjects.html"
+}
+
+function LiveStream() {
+  alert("Hey I'm Live");
+  window.location.href = "google.com"
+}
+
+function SiteMap() {
+  // window.location.href = "SiteMap.html"
+  alert("Whoops Site Map is Not Live yet, Try again Soon");
+}
+
+function GithubProject() {
+  window.location.href = "Github/GithubProjects.html"
 }

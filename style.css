@@ -7,7 +7,7 @@
 .Hyperlink { 
   text-decoration: none; 
   color: rgb(30, 34, 32);
-  margin: 5px;
+  margin-bottom: 10px;
   font-size: 25px; 
   list-style-type:none;
 }
@@ -18,6 +18,18 @@
   background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
   border: 1px solid black; 
   margin: 0 auto; 
+  margin-top: 15px;
+  box-shadow: 2px 2px 9px;
+
+}
+
+.boxCurrpro { 
+  width: 800px; 
+  text-align: center; 
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black; 
+  margin: 0 auto; 
+  margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 9px;
 
@@ -25,7 +37,7 @@
 
   .TextBear {
     text-align: center; 
-    font-size: 21px; 
+    font-size: 22px; 
     text-decoration: none;
     margin: 0 auto;
   }
@@ -45,8 +57,31 @@
   background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
   border: 1px solid black;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 9px; 
+}
+
+.box-4 { 
+  width: 450px;
+  /* height: auto; */
+  text-align: center;
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 14px;
+  box-shadow: 2px 2px 9px;
+}
+
+.dropdown-item { 
+  max-width: 250px;
+  text-align: center;
+  background: linear-gradient(to right bottom, #30f5bd, #eceff1);
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 14px;
+  box-shadow: 2px 2px 9px;
 }
 
 .text-2 { 
@@ -56,9 +91,18 @@
   margin-right: 1em;
 }
 
+h6 {
+  /* font-size: x-large; */
+  margin-top: -2px;
+}
+
 .text-3 { 
   /* font-size: 21px;  */
   margin: 0; 
+}
+
+li {
+  list-style: none;
 }
 
 /* Pop Up CSS*/
@@ -125,6 +169,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  width: 950px;
 }
 .close:hover,
 .close:focus {
@@ -143,15 +188,22 @@
   width: 850px;
   height: auto;
   text-align: center;
-  background: #466368;
+  margin: 0 auto;
+  background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
+  border: 1px solid black;
+  box-shadow: 2px 2px 9px;
+}
+
+.sitemap {
+  width: 600px;
   background: linear-gradient(to right bottom, #ecf3f1, #7ec3f8);
   border: 1px solid black;
   margin: 0 auto;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 9px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 9px;
 }
 
 .text-1 {
@@ -162,20 +214,43 @@
 
 .btn {
   font-size: 16px;
-  max-width: 1600px;
-  /* background-color: lightgreen; */
   background: linear-gradient(to right bottom, #71f0cc, #1a97f7); 
   padding: 15px;
   box-shadow: 2px 2px 9px;
   border: none;
   border-radius: 25px;
-  margin-right: 20px;
+  margin-right: 5px;
+}
+
+.btn-g {
+  font-size: 16px;
+  background: linear-gradient(to right bottom, #71f0cc, #1a97f7); 
+  padding: 15px;
+  box-shadow: 2px 2px 9px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 .btn-2 {
-  /* font-size: large; */
+  font-size: large;
   background: linear-gradient(to right bottom, #71f0cc, #1a97f7);
   border-radius: 25px;
+  padding: 5px;
+  border: none;
+  margin-top: 5px;
+  animation-duration: 0.9s;
+}
+
+.btn-3 {
+  font-size: large;
+  background: linear-gradient(to right bottom, #71f0cc, #1a97f7);
+  border-radius: 25px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
   margin-top: 5px;
 }
 
