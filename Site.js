@@ -119,6 +119,8 @@ function LiveStream() {
 function SiteMap() {
   // window.location.href = "SiteMap.html"
   alert("Whoops Site Map is Not Live yet, Try again Soon");
+  alert("Also you can use the /sitemaps.html in the URL Bar");
+
 }
 
 function GithubProject() {
