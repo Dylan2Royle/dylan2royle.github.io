@@ -94,17 +94,8 @@ function SocialMedia() {
   window.location.href = "SocialMedia.html"
 }
 
-function PreviousWork() {
-  window.location.href = "PWProjects.html"
-}
-
 function AboutMe() {
   window.location.href = "About.html"
-}
-
-
-function PWPPastProjects() {
-  window.location.href = "PWPPastProjects.html"
 }
 
 function PWPCurrentProjects() {
