@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Social Media Grid</title>
+</head>
+<body>
+    <div class="center-container">
+        <div>
+            <h1> Dylan R Live </h1>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <button id="youtube"><i class="fab fa-youtube"></i> Vods</button>
+            </div>
+            <div class="grid-item">
+                <button id="trovo"><i class="fa fa-solid fa-t"></i> Trovo</button>
+            </div>
+            <div class="grid-item">
+                <button id="kick"><i class="fa-brands fa-kickstarter"></i> Kick</button>
+            </div>
+            <div class="grid-item">
+                <button id="twitch"><i class="fab fa-twitch"></i> Twitch</button>
+            </div>
+            <div class="grid-item">
+            <button id="tiktok"><i class="fa-brands fa-tiktok"></i> TikTok </button>
+        </div>
+            <!-- Add more buttons as needed -->
+        </div>
+        <div class="additional-box">
+            <h2> Social Media </h2>
+
+            <div class="social-links">
+            <a id="" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a id="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a id="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <!-- Add more social media links as needed -->
+        </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Add event listeners for button clicks
+    document.getElementById("youtube").addEventListener("click", function () {
+        window.open("https://www.youtube.com/@DylanRVods/live", "_blank");
+    });
+
+    document.getElementById("trovo").addEventListener("click", function () {
+        window.open("https://trovo.live", "_blank");
+    });
+
+    document.getElementById("kick").addEventListener("click", function () {
+        window.open("https://kick.com/DylanRoyleGaming", "_blank");
+    });
+
+    document.getElementById("twitch").addEventListener("click", function () {
+        window.open("https://www.twitch.tv/DylanRoyleGaming", "_blank");
+    });
+
+    document.getElementById("instagram").addEventListener("click", function () {
+        window.open("https://www.instagram.com/Dylan_R_Live", "_blank");
+    });
+
+    document.getElementById("twitter").addEventListener("click", function () {
+        window.open("https://twitter.com/Dylan_R_Live", "_blank");
+    });
+
+    document.getElementById("tiktok").addEventListener("click", function () {
+        window.open("https://tiktok.com/@dylan_ryt", "_blank");
+    });
+
+});
+
+
+</script>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 750px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+}
+
+.grid-item button {
+    font-size: 2em;
+    background: none;
+    border: none;
+}
+
+.grid-item:hover {
+    background-color: #ece9e9;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.grid-item i {
+    margin-right: 5px;
+}
+
+.additional-box {
+    background-color: #e4d9d9;
+    border: 2px solid #c5c1c1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.social-links {
+    font-size: 2em;
+}
+
+</style>
