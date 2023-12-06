@@ -26,7 +26,7 @@ body {
 
 @media (min-width: 750px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -89,10 +89,18 @@ body {
 }
 
 #kick:hover {
-    background: linear-gradient(to right, rgb(9, 255, 0), 70%, rgb(11, 209, 5));
+    background: linear-gradient(to right, rgb(9, 255, 0), 70%, rgb(11, 139, 6));
 }
 
 #kick {
+    background: #fff;
+}
+
+#Trovo:hover {
+    background: linear-gradient(to right, rgb(11, 139, 6), rgb(9, 255, 0));
+}
+
+#Trovo {
     background: #fff;
 }
 
@@ -126,6 +134,16 @@ body {
     transition: 500ms ease-in-out;
 }
 
+#Printable:hover {
+    color: #3144a0;
+    transition: 500ms ease-in-out;
+}
+
+#Printable {
+    color: #333;
+    transition: 500ms ease-in-out;
+}
+
 .grid-item-2 {
     transform: scale(1);
     transition: transform 500ms;
@@ -153,7 +171,7 @@ h1:hover {
 }
 
 .social-links-box {
-    display: flex;
+    display: grid;
     width: fit-content;
     gap: 20px;
     margin: 0 auto;

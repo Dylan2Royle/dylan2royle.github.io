@@ -33,4 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open("index.html");
     });
 
+    document.getElementById("Printable").addEventListener("click", function () {
+        window.open("https://www.printables.com/@DylanRoyle_397433");
+    });
+
+    document.getElementById("Trovo").addEventListener("click", function () {
+        window.open("https://www.Trovo.live/@DylanRoyle_397433");
+    });
+
 });
