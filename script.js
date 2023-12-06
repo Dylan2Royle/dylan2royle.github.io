@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("HomePage").addEventListener("click", function () {
-        window.open("index.html");
+        window.location.href = "index.html"
     });
 
     document.getElementById("Printable").addEventListener("click", function () {
