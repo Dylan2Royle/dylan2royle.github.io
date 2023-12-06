@@ -71,7 +71,7 @@ body {
 }
 
 #twitch:hover {
-    background: linear-gradient(to right, #9146FF, 70%, #772CE8);
+    background: linear-gradient(to right, #9146FF, 70%, #6b28cf);
 }
 
 #twitch {
@@ -166,8 +166,6 @@ h1:hover {
     padding: 40px;
     grid-template-columns: repeat(3, 1fr);
 }
-
-
 
 .social-links-box button {
     text-decoration: none;
