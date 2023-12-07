@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ecf3f1, #7ec3f8);
+    background: linear-gradient(to right, rgb(123, 65, 168), rgb(15, 5, 161));
     margin: 0;
     display: flex;
     justify-content: center;
@@ -157,7 +157,7 @@ body {
 h1 {
     font-size: 3em;
     transition: 500ms ease-in-out;
-    color: black;
+    color: rgb(255, 255, 255);
     transform: scale(1);
     transition: transform 500ms;
 }
@@ -165,8 +165,8 @@ h1 {
 h1:hover {
     font-size: 3em;
     transition: 500ms ease-in-out;
-    color: blue;
-    transform: scale(1.2);
+    color: rgb(183, 183, 230);
+    transform: scale(1.5);
     transition: transform 500ms;
 }
 
