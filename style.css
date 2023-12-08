@@ -14,23 +14,12 @@
 
 /* Per Page CSS */
 .box-2 {
-  width: 800px;
+  width: 850px;
   /* text-align: center; */
   background: linear-gradient(to right, rgb(171, 113, 216), rgb(136, 133, 182));
   border: 1px solid black;
   margin: 0 auto;
   margin-top: 15px;
-  box-shadow: 2px 2px 9px;
-
-}
-
-.boxCurrpro {
-  width: 800px;
-  background: linear-gradient(to right, rgb(171, 113, 216), rgb(136, 133, 182));
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   box-shadow: 2px 2px 9px;
 
 }
@@ -57,7 +46,7 @@
 }
 
 .box-3 {
-  width: 800px;
+  width: 700px;
   text-align: center;
   background: linear-gradient(to right, rgb(171, 113, 216), rgb(136, 133, 182));
   border: 1px solid black;
@@ -67,19 +56,8 @@
 
 }
 
-.dropdown-item {
-  max-width: 250px;
-  text-align: center;
-  background: linear-gradient(to right, rgb(171, 113, 216), rgb(136, 133, 182));
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 14px;
-  box-shadow: 2px 2px 9px;
-}
-
 .box {
-  width: 850px;
+  width: 1000px;
   height: auto;
   text-align: center;
   margin: 0 auto;
@@ -109,18 +87,22 @@
   padding: 16px;
 }
 
+.h1-2 {
+  padding-top: 20px;
+}
+
 .btn {
   font-size: 0.7em;
-  background: linear-gradient(to right bottom, #71f0cc, #1a97f7);
   padding: 15px;
+  background: wheat;
   box-shadow: 2px 2px 9px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-right: 5px;
 }
 
 .btn-g {
-  background: linear-gradient(to right bottom, #71f0cc, #1a97f7);
+  background: white;
   padding: 15px;
   box-shadow: 2px 2px 9px;
   border: none;
