@@ -1,18 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, rgb(123, 65, 168), rgb(15, 5, 161));
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-@media (min-width: 750px) {
-    .body {
-        height: 150vh;
-    }
-}
 
 .center-container {
     text-align: center;
