@@ -43,11 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
 // Get the screen width and height
 var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
 // Display the screen width and height on the webpage
 var screenDimensionsElement = document.getElementById('screenDimensions');
 screenDimensionsElement.innerHTML = "Screen Width: " + screenWidth + ", Screen Height: " + screenHeight;
