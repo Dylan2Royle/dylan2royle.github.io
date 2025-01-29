@@ -1,6 +1,6 @@
 # Website
 
- # New Website is Comming Soon with PHP, JS, CSS
+ # New Website is Comming Soon
 
 The URL is [DylanRoyle.co.uk](DylanRoyle.co.uk)
 
