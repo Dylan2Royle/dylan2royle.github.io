@@ -1,62 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <!--   <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.twitch.tv/"> -->
-  <title>Dylan Royle - Home Page</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="Site.js">  </script>
+    <meta charset="UTF-8">
+    <title>Dylan R Live | Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 620px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 3px solid #444;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 26px;
+        }
+
+        p {
+            margin: 0 0 20px;
+            color: #aaa;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1px;
+        }
+
+        .link {
+            display: block;
+            text-decoration: none;
+            background: #1f1f1f;
+            color: #fff;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+
+        .link:hover {
+            background: #2a2a2a;
+            transform: scale(1.02);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .links-grid > .link:only-child {
+            grid-column: 1 / -1;
+        }
+
+        .links-grid:has(.link:nth-child(2)):not(:has(.link:nth-child(3))) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+    </style>
 </head>
+<body>
 
-<body class="body">
+<div class="container">
 
-  <!-- Nav Bar -->
-  <div class="box">
-    <div class="text-1">
-      <h1 class="clockclass"> Dylan Royle </h1>
-      <div class="navbar">
-        <div class="navbar-buttons">
-          <button class="btn" type=button onclick="HomePage()"> Home Page </button>
-          <button class="btn" type=button onclick="SocialMedia()"> Social Media </button>
-          <button class="btn" type=button onclick="PWPCurrentProjects()"> Projects </button>
-          <button class="btn" type=button onclick="AboutMe()"> About Me </button>
+    <!-- PROFILE -->
+    <img src="Hytale_Blured.png" alt="Avatar" class="avatar">
+    <h1>Dylan R Live</h1>
+    <p>Streamer | Creator</p>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="section smart-grid">
+        <h2>Social Media</h2>
+        <div class="links-grid">
+            <a class="link" href="https://x.com/DylanRLive" target="_blank">Twitter / X</a>
+            <a class="link" href="https://instagram.com/yourname" target="_blank">Instagram Main</a>
+            <a class="link" href="https://www.instagram.com/dylanrdrones/" target="_blank">Instagram Drones</a>
+            <a class="link" href="https://www.tiktok.com/@dylan_ryt" target="_blank">TikTok</a>
+            <a class="link" href="https://bsky.app/profile/dylanroyle.co.uk" target="_blank">BlueSky</a>
+            <a class="link" href="https://mastodon.social/@DylanRLive" target="_blank">Mastodon</a>
+            <a class="link" href="https://odysee.com/@DylanRLive" target="_blank">Odysee</a>
         </div>
-      </div>
     </div>
-  </div>
-  </div>
-  <!-- Nav Bar -->
 
-  <div class="box-2">
-    <h1 class="text-1"> Main Channel Video </h1>
-    <div class="text-1">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wZfq8uYarqU" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+    <!-- TWITCH -->
+    <div class="section">
+        <h2>Twitch</h2>
+        <div class="links-grid">
+            <a class="link" href="https://www.twitch.tv/DylanRGLive" target="_blank">Twitch Gaming</a>
+            <a class="link" href="https://www.twitch.tv/dylanrdj" target="_blank">Twitch DJ</a>
+        </div>
     </div>
-  </div>
 
-  <div class="box-2">
-    <h1 class="text-1"> Twitch Channel Live At Twitch.tv/DylanRoyleGaming mostly "Daily"
-      <br>
-      Github Broke the twitch iframe KEKW
-    </h1>
-
-  </div>
-
-  <div class="box-3">
-    <div class="text-3">
-      <script src="Copyright.js"> </script>
+    <!-- YOUTUBE -->
+    <div class="section smart-grid">
+        <h2>Youtube</h2>
+        <div class="links-grid">
+            <a class="link" href="https://www.youtube.com/@DylanRGaming" target="_blank">Gaming</a>
+            <a class="link" href="https://www.youtube.com/@DylanRVods" target="_blank">Vods</a>
+            <a class="link" href="https://www.youtube.com/@DylanRPlus" target="_blank">Extra</a>
+            <a class="link" href="https://www.youtube.com/@DylanRClips" target="_blank">Clips</a>
+            <a class="link" href="https://www.youtube.com/@DylanRMemes" target="_blank">Meme</a>
+            <a class="link" href="https://www.youtube.com/@DylanRTechno" target="_blank">Tech</a>
+        </div>
     </div>
-  </div>
 
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
-    integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-    data-cf-beacon='{"rayId":"7c4ce001ea6371d5","version":"2023.4.0","r":1,"token":"761efcea60b3412897d4b75da79163f0","si":100}'
-    crossorigin="anonymous"></script>
+    <!-- SPONSORS -->
+    <div class="section">
+        <h2>Sponsors</h2>
+        <div class="links-grid">
+            <a class="link" href="https://sponsorlink.com" target="_blank">No Sponsor At The Moment</a>
+        </div>
+    </div>
+
+    <footer id="footer-text"></footer>
+
+</div>
+
 
 </body>
-
 </html>
+
+
+<script>
+    var year = new Date().getFullYear();
+    document.getElementById("footer-text").innerHTML =
+        "&copy; " + "2019 - " + year + " Dylan Royle. Some rights reserved. Icons are owned by their respective copyright and trademark holders.";
+</script>
