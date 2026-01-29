@@ -104,6 +104,9 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+.copy-email {
+    cursor: pointer;
+}
 
     </style>
 </head>
@@ -116,12 +119,22 @@
     <h1>Dylan R Live</h1>
     <p>Streamer | Creator</p>
 
+    <!-- Emails -->
+
+    <div class="section">
+        <h2>Emails</h2>
+        <div class="links-grid">
+            <a class="link copy-email" data-copy="Enquiries@dylanroyle.co.uk">Enquiries</a>
+            <a class="link copy-email" data-copy="Sponsorship@dylanroyle.co.uk">Sponsorship</a>
+        </div>
+    </div>
+
     <!-- SOCIAL MEDIA -->
     <div class="section smart-grid">
         <h2>Social Media</h2>
         <div class="links-grid">
             <a class="link" href="https://x.com/DylanRLive" target="_blank">Twitter / X</a>
-            <a class="link" href="https://instagram.com/yourname" target="_blank">Instagram Main</a>
+            <a class="link" href="https://www.instagram.com/dylanrlive/" target="_blank">Instagram Main</a>
             <a class="link" href="https://www.instagram.com/dylanrdrones/" target="_blank">Instagram Drones</a>
             <a class="link" href="https://www.tiktok.com/@DylanRLive" target="_blank">TikTok</a>
             <a class="link" href="https://bsky.app/profile/dylanroyle.co.uk" target="_blank">BlueSky</a>
@@ -173,4 +186,21 @@
     var year = new Date().getFullYear();
     document.getElementById("footer-text").innerHTML =
         "&copy; " + "2019 - " + year + " Dylan Royle. Some rights reserved. Icons are owned by their respective copyright and trademark holders.";
+
+document.querySelectorAll('.copy-email').forEach(el => {
+    el.addEventListener('click', () => {
+        const email = el.getAttribute('data-copy');
+
+        navigator.clipboard.writeText(email).then(() => {
+            const original = el.textContent;
+            el.textContent = 'Copied';
+
+            setTimeout(() => {
+                el.textContent = original;
+            }, 1200);
+        });
+    });
+});
+</script>
+
 </script>
